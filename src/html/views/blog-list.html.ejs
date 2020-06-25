@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-md-10 pl-default">
+                <nav class="nav">
+                    <a class="nav-link" href="/blog.html">Плитка</a>
+                    <a class="nav-link underline" href="/blog-list.html">Список</a>
+                </nav>
+            </div>
+            <div class="col-md-2 pr-default">
+                <div class="subheader__search">
+                    <%= require('../partials/subheader-search.html') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-list no-image">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 11.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <span>Artisanal techniques: fabric dyeing</span>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 03.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <span>Artisanal techniques: Embroidery</span>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 25.04.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <span>Artisanal techniques: cloth painting</span>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 20.04.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <span>A copy of the statue of Liberty</span>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+</section>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

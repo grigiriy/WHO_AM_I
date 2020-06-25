@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-md-10 pl-default">
+                <%= require('../partials/svg-icons/_arrow-back-icon.html') %>
+                <span class="subheader__page-title">Artist</span>
+            </div>
+            <div class="col-md-2 pr-default">
+                <div class="subheader__search">
+                    <%= require('../partials/subheader-search.html') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-list">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="content-page__text">
+                    <span class="content-page__text-title">ДЖЕЙКОБ ЯКУБОВ</span>
+                    <div class="content-page__text-mini art">
+                        <p>
+                            Джейкоб Якубов - молодой художник, известный неординарными работами из бетона и металла,
+                            исследующими традиции древних ремесел и философию Дзен.
+                        </p>
+                        <p>
+                            В конце 2012 года после окончания учебы в New York Film Academy он отправился в длительное
+                            путешествие по Юго-Восточной Азии и Гималаям для изучения мультикультурных слоев и духовных
+                            практик.
+                        </p>
+                        <p>
+                            В 2013 году был организатором проекта Night Market на территории фабрики Красный Октябрь, в
+                            котором под одной крышей были объединены искусство, мода и дизайн. Тогда же начал работать
+                            над созданием своей линии одежды под брендом WHO/AM. В 2016 году окончил факультет
+                            геммологии в Российском государственном геологоразведочном университете и основал Ювелирный
+                            дом Yakubov Jewelry House.
+                        </p>
+                        <p>
+                            В 2017 году основал галерею современного искусства WHO I AM Gallery, а годом позже
+                            участвовал в параллельной программе Московской международной биеннале молодого искусства.
+                        </p>
+                        <a href="/art-art.html" class="btn btn-dark btn-big-absolute">see works</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/art/detail.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

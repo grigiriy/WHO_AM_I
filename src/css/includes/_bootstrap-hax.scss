@@ -1,0 +1,251 @@
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.btn-dark {
+  background-color: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.btn-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 0 0 5px;
+}
+
+.form-control,
+.custom-control-input {
+  &.is-invalid {
+    background-image: none;
+    padding-right: 100px;
+
+    & ~ .invalid-feedback {
+      display: inline-block;
+      width: auto;
+    }
+
+    & ~ .custom-control-label {
+      padding-right: 100px;
+
+      &::before {
+        background-color: transparent;
+        border-color: #dc3545;
+      }
+    }
+  }
+}
+
+.form-group,
+.custom-control {
+  position: relative;
+
+  .invalid-feedback {
+    position: absolute;
+    right: 15px;
+    top: 30%;
+    margin-top: 0;
+  }
+}
+
+.custom-control {
+  border: 1px solid #999;
+  padding-left: $defaultPadding;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.custom-control-label {
+  line-height: 1.5;
+  display: block;
+  padding: 9px 0;
+}
+
+.custom-checkbox,
+.custom-radio {
+  .custom-control-label {
+    &::before {
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+      background-color: transparent;
+      border: 1px solid $primaryColor;
+      top: 30%;
+    }
+
+    &::after {
+      top: 30%;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      background-color: $primaryColor;
+      width: 10px;
+      height: 10px;
+      top: calc(30% + 2px);
+      left: -22px;
+      border-color: $primaryColor;
+    }
+
+    &::after {
+      background-image: none;
+      border: 1px solid $primaryColor;
+      border-radius: 100%;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.p-default {
+  padding: $defaultPadding !important;
+}
+
+.pl-default {
+  padding-left: $defaultPadding !important;
+}
+
+.pr-default {
+  padding-right: $defaultPadding !important;
+}
+
+.pb-default {
+  padding-bottom: $defaultPadding !important;
+}
+
+.pt-default {
+  padding-top: $defaultPadding !important;
+}
+
+.mb-35 {
+  margin-bottom: $defaultPadding;
+}
+
+.mr-35 {
+  margin-right: $defaultPadding;
+}
+
+.mt-35 {
+  margin-top: $defaultPadding;
+}
+
+.ml-35 {
+  margin-left: $defaultPadding;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+  &-item {
+
+    &.active {
+      color: $primaryColor;
+    }
+
+    & + .breadcrumb-item::before {
+      content: '>';
+      color: $primaryColor;
+    }
+  }
+}
+
+.dropdown-menu-custom.main-menu {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  top: calc(60px + 50px);
+  z-index: 10;
+  background-color: $grayBg;
+  border: 0;
+  width: 100%;
+  //padding: 23px $defaultPadding 30px $defaultPadding;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  border-top: 1px solid #fff;
+
+  .dropdown-menu__content {
+    padding: 23px $defaultPadding 30px $defaultPadding;
+    border-right: 1px solid #fff;
+  }
+
+  &.show {
+    //top: 20px !important;
+    transform: translate3d(0, 120px, 0) !important;
+  }
+}
+
+.dropdown-item {
+  color: $primaryColor;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.custom-select {
+  background: #fff url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23333333'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  border-color: #000200;
+  color: #000200;
+}
+
+.dropdown-toggle {
+
+  &::after {
+    background: url("/img/arrow-down.svg") no-repeat;
+    border: none;
+    width: 8px;
+    height: 8px;
+    vertical-align: 0;
+  }
+
+  &.visible {
+    &::after {
+      background: url("/img/close.svg") no-repeat;
+    }
+  }
+}
+
+.filter-nav-icon {
+  position: relative;
+
+  &.visible {
+    &::before {
+      content: '';
+      position: absolute;
+      text-align: center;
+      left: 0;
+      top: 2px;
+      width: 20px;
+      height: 12px;
+      background: #e5e5e5 url(/img/close.svg) center no-repeat;
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  transition: transform .3s ease;
+}
+
+.show .dropdown-toggle {
+  transition: transform .3s ease;
+
+  &::after {
+    transform: rotate(-90deg);
+    transition: transform .3s ease;
+  }
+}
+
+.navbar-toggler {
+  padding: 0;
+}

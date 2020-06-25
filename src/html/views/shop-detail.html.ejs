@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-md-10 pl-default">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">WOMAN</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Shirt</li>
+                        <li class="breadcrumb-item active" aria-current="page">Slip dress on thin straps</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-2 pr-default">
+                <div class="subheader__search">
+                    <%= require('../partials/subheader-search.html') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shop-detail">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <div class="shop-detail__big-slider" id="lightgallery">
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="shop-detail__container-slider-item" data-src="img/shop-detail.jpg">
+                        <a href="img/shop-detail.jpg" class="gallery-item">
+                            <img src="img/shop-detail.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="shop-detail__container">
+                    <div class="shop-detail__content">
+                        <div class="shop-detail__content-header d-flex flex-wrap justify-content-between">
+                            <span class="shop-detail__content-title">Slip dress on thin straps</span>
+                            <span class="shop-detail__content-price old-price">140 €</span>
+                        </div>
+                        <div class="shop-detail__content-sale">
+                            <span class="shop-detail__content-price">140 €</span>
+                        </div>
+                        <p class="shop-detail__content-desc">
+                            The slip dress on thin straps is made of 8 wedges of flowing silk and decorated with the
+                            stripe
+                            of the French lace. This model is elegant enough to wear it on social events as well as on
+                            cozy
+                            home evenings.
+                        </p>
+                        <div class="colors-list big">
+                            <label class="custom-checkbox colored colors-list__item" for="white">
+                                <input type="radio" checked="checked" id="white" name="color">
+                                <span class="checkmark white"></span>
+                            </label>
+                            <label class="custom-checkbox colored colors-list__item" for="yellow">
+                                <input type="radio" id="yellow" name="color">
+                                <span class="checkmark yellow"></span>
+                            </label>
+                            <label class="custom-checkbox colored colors-list__item" for="purple">
+                                <input type="radio" id="purple" name="color">
+                                <span class="checkmark purple"></span>
+                            </label>
+                            <label class="custom-checkbox colored colors-list__item" for="gray">
+                                <input type="radio" id="gray" name="color">
+                                <span class="checkmark gray"></span>
+                            </label>
+                            <label class="custom-checkbox colored colors-list__item" for="black">
+                                <input type="radio" id="black" name="color">
+                                <span class="checkmark black"></span>
+                            </label>
+                            <!--<a href="javascript:void(0);" class="colors-list__item white active"></a>
+                            <a href="javascript:void(0);" class="colors-list__item yellow"></a>
+                            <a href="javascript:void(0);" class="colors-list__item purple"></a>
+                            <a href="javascript:void(0);" class="colors-list__item gray"></a>
+                            <a href="javascript:void(0);" class="colors-list__item black"></a>-->
+                        </div>
+
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>select size</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <a href="/checkout.html" class="btn btn-dark btn-block mt-2" id="addToCart">
+                            add to bag
+                            <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                        </a>
+
+                        <div class="shop-detail__content-params pt-default">
+                            <span>Composition: 100% silk</span>
+                            <span>Composition: 100% silk</span>
+                            <span>Composition: 100% silk</span>
+                        </div>
+                    </div>
+
+                    <div class="shop-detail__container-slider shop-detail-slider">
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                        <div class="shop-detail__container-slider-item">
+                            <img src="img/shop-detail-mini.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters more-items">
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="more-items-title p-default">
+                    <span class="h1">You May <br/> Also Like</span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="more-items__list row no-gutters">
+                    <div class="more-items__list-item col-sm-6">
+                        <a href="javascript:void(0);">
+                            <picture>
+                                <source srcset="img/more-items1.jpg" media="(max-width: 768px)">
+                                <img src="img/more-items1.jpg" class="img-fluid" alt="">
+                            </picture>
+                        </a>
+                        <div class="more-items__list-item-content">
+                            <span class="more-items__list-item-title">
+                            Slip dress on thin straps
+                        </span>
+                            <span class="more-items__list-item-price">140 €</span>
+                        </div>
+                    </div>
+                    <div class="more-items__list-item col-sm-6">
+                        <a href="javascript:void(0);">
+                            <picture>
+                                <source srcset="img/more-items2.jpg" media="(max-width: 768px)">
+                                <img src="img/more-items2.jpg" class="img-fluid" alt="">
+                            </picture>
+                        </a>
+                        <div class="more-items__list-item-content">
+                            <span class="more-items__list-item-title">
+                            Slip dress on thin straps
+                        </span>
+                            <span class="more-items__list-item-price">140 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

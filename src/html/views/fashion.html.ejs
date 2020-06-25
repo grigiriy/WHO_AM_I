@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-md-10 pl-default">
+                <nav class="nav">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuSubHeader">Man</a>
+                    <a class="nav-link" href="#">Woman</a>
+                    <a class="nav-link" href="#">Accessories</a>
+                    <a class="nav-link active" href="/sale.html">Sale</a>
+                </nav>
+            </div>
+            <div class="col-md-2 pr-default">
+                <div class="subheader__search">
+                    <%= require('../partials/subheader-search.html') %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown-menu-custom main-menu" data-target="dropdownMenuSubHeader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <div class="dropdown-menu__content">
+                        <span class="header-gray text-uppercase">Category</span>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="javascript:void(0);">Outerwear</a>
+                            <a class="nav-link" href="javascript:void(0);">Sweatshirts</a>
+                            <a class="nav-link" href="javascript:void(0);">Knitwear</a>
+                            <a class="nav-link" href="javascript:void(0);">T-shirts</a>
+                            <a class="nav-link" href="javascript:void(0);">Shirts</a>
+                            <a class="nav-link" href="javascript:void(0);">Suit jackets</a>
+                            <a class="nav-link" href="javascript:void(0);">Jeans</a>
+                            <a class="nav-link" href="javascript:void(0);">Trousers</a>
+                            <a class="nav-link" href="javascript:void(0);">Children</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown-menu__content">
+                        <span class="header-gray text-uppercase">Color</span>
+                        <div class="flex-column colors-list nav">
+                            <label class="custom-checkbox colored" for="red">Red
+                                <input type="checkbox" id="red" name="red">
+                                <span class="checkmark red"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="orange">Orange
+                                <input type="checkbox" checked="checked" id="orange" name="orange">
+                                <span class="checkmark orange"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="yellow">Yellow
+                                <input type="checkbox" id="yellow" name="yellow">
+                                <span class="checkmark yellow"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="green">Green
+                                <input type="checkbox" id="green" name="green">
+                                <span class="checkmark green"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="light-green">Light Green
+                                <input type="checkbox" checked="checked" id="light-green" name="light-green">
+                                <span class="checkmark light-green"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="blue">Blue
+                                <input type="checkbox" id="blue" name="blue">
+                                <span class="checkmark blue"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="light-blue">Light Blue
+                                <input type="checkbox" id="light-blue" name="light-blue">
+                                <span class="checkmark light-blue"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="purple">Purple
+                                <input type="checkbox" checked="checked" id="purple" name="purple">
+                                <span class="checkmark purple"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="black">Black
+                                <input type="checkbox" id="black" name="black">
+                                <span class="checkmark black"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="white">White
+                                <input type="checkbox" id="white" name="white">
+                                <span class="checkmark white"></span>
+                            </label>
+                            <label class="custom-checkbox colored" for="gray">Gray
+                                <input type="checkbox" checked="checked" id="gray" name="gray">
+                                <span class="checkmark gray"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown-menu__content">
+                        <span class="header-gray text-uppercase">Size</span>
+                        <div class="nav flex-column text-list-checkbox">
+                            <label class="custom-checkbox text" for="xxs">
+                                <input type="checkbox" id="xxs" name="xxs">
+                                <span class="text-container">
+                                    XXS
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="xs">
+                                <input type="checkbox" id="xs" name="xs">
+                                <span class="text-container">
+                                    XS
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="s">
+                                <input type="checkbox" id="s" name="s">
+                                <span class="text-container">
+                                    S
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="m">
+                                <input type="checkbox" id="m" name="m">
+                                <span class="text-container">
+                                    M
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="l">
+                                <input type="checkbox" id="l" name="l">
+                                <span class="text-container">
+                                    L
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="xl">
+                                <input type="checkbox" id="xl" name="xl">
+                                <span class="text-container">
+                                    XL
+                                </span>
+                            </label>
+                            <label class="custom-checkbox text" for="xxl">
+                                <input type="checkbox" id="xxl" name="xxl">
+                                <span class="text-container">
+                                    XXL
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid p-0">
+    <div class="row no-gutters shop-list">
+        <%= require('../partials/shop-list.html') %>
+        <%= require('../partials/shop-list.html') %>
+    </div>
+</div>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.subscription {
+  .input-group-append {
+    button {
+      font-size: $primaryFontSize;
+      color: $primaryColor;
+      &:hover {
+        background-color: $primaryColor;
+        color: $grayBg;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="align-items-baseline col-md-10 d-flex flex-wrap align-content-center pl-default">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">WOMAN</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shirt</li>
+                    </ol>
+                </nav>
+                <div class="filter ml-4">
+                    <a href="javascript:void(0);" class="text-uppercase">
+                        <%= require('../partials/svg-icons/_filter-icon.html') %>
+                        Filter
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 pr-default">
+                <%= require('../partials/subheader-search.html') %>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid p-0">
+    <div class="row no-gutters">
+        <%= require('../partials/shop-list.html') %>
+        <%= require('../partials/shop-list.html') %>
+    </div>
+</div>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,163 @@
+.icon-list {
+  &__item {
+    position: relative;
+    padding: 0 0 17px 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $borderGreyColor;
+
+    &___icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &___header {
+      text-transform: uppercase;
+    }
+
+    &___desc {
+      color: #999;
+      margin-top: 7px;
+    }
+  }
+}
+
+.checkout-list {
+  border-right: 1px solid $borderGreyColor;
+
+  &__item {
+    border-bottom: 1px solid $borderGreyColor;
+
+    &-image {
+      width: 35%;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &-info {
+      padding: $defaultPadding;
+      position: relative;
+      width: 65%;
+
+      .remove-item {
+        position: absolute;
+        top: $defaultPadding;
+        right: $defaultPadding;
+      }
+
+      &___title {
+        font-weight: 600;
+        display: block;
+        max-width: 90%;
+      }
+
+      &___params {
+        margin: 15px 0;
+      }
+
+      &___price {
+        span {
+          display: block;
+        }
+      }
+
+    }
+
+    &-counter {
+      position: absolute;
+      bottom: $defaultPadding;
+      right: $defaultPadding;
+    }
+  }
+}
+
+.art-list {
+  &__item {
+    position: relative;
+
+    &-picture {
+      img {
+        width: 100%;
+      }
+    }
+
+    &.big-header {
+      .art-list__item-header {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+    }
+
+    &.dark {
+      .art-list__item-header {
+        color: $primaryColor;
+      }
+
+      .art-list__item-more {
+        color: $primaryColor;
+
+        svg {
+          margin-left: 15px;
+
+          path {
+            stroke: $primaryColor;
+          }
+        }
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    &-header {
+      color: #fff;
+      position: absolute;
+      top: $defaultPadding;
+      left: $defaultPadding;
+    }
+
+    &-more {
+      color: #fff;
+      position: absolute;
+      bottom: $defaultPadding;
+      left: $defaultPadding;
+      text-transform: uppercase;
+      font-size: 14px;
+
+      .more-arrow {
+        transition: transform .3s ease;
+      }
+
+      svg {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        color: #fff;
+
+        .more-arrow {
+          transform: translateX(-10px);
+          transition: transform .3s ease;
+        }
+      }
+    }
+  }
+}
+
+.more-items {
+  &__list {
+    &-item {
+      position: relative;
+      &-content {
+        position: absolute;
+        top: $defaultPadding;
+        left: $defaultPadding;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

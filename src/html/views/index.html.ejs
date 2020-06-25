@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<%= require('../partials/main-slider.html') %>
+<div class="container-fluid p-0">
+    <div class="row no-gutters art-list">
+        <%= require('../partials/lookbook-main-list.html') %>
+    </div>
+</div>
+<section class="categories-list">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters categories-list__item">
+            <div class="align-items-center col-md-6 d-flex">
+                <div class="categories-list__item-title p-default d-none d-md-block">
+                    <span class="h1">Exhibitions & Projects</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="categories-list__item-content">
+                    <picture>
+                        <source srcset="img/plastic-768.jpg" media="(max-width: 767px)">
+                        <source srcset="img/plastic-576.jpg" media="(max-width: 575px)">
+                        <img src="img/plastic.jpg" alt="" class="img-fluid">
+                    </picture>
+                    <div class="categories-list__item-date">
+                        <span>11.10.2019 - 01.11.2019</span>
+                    </div>
+                    <div class="categories-list__item-header">
+                        <span>“Rethinking” Where is my plastic bag?</span>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover categories-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-video d-flex justify-content-center align-items-center">
+    <div class="main-video__content text-center" id="videogallery">
+        <a href="https://www.youtube.com/watch?v=Bk7RVw3I8eg" class="main-video__play video-item">
+            <%= require('../partials/svg-icons/_play-video-icon.html') %>
+        </a>
+        <p>
+            WHO I AM Gallery is the modern multifunctional place working with unique objects of design and contemporary
+            art
+        </p>
+    </div>
+</section>
+<%= require('../partials/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Who Am</title>
+    <!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">-->
+</head>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-11 pl-default">
+                <div class="subheader__search text-inversed">
+                    <form action="" method="GET" id="searchForm">
+                        <div class="input-group">
+                            <button type="submit">
+                                <%= require('../partials/svg-icons/_search-icon.html') %>
+                            </button>
+                            <input type="text" class="form-control" name="q" placeholder="SEARCH" aria-label="SEARCH"
+                                   required aria-describedby="basic-addon2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1 text-right pt-2 pr-default">
+                <a href="javascript:void(0);">
+                    <%= require('../partials/svg-icons/_close-icon.html') %>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid p-0">
+    <div class="row no-gutters shop-list">
+        <%= require('../partials/shop-list.html') %>
+    </div>
+</div>
+
+<%= require('../partials/footer.html') %>
+</body>
+</html>

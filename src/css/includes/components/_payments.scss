@@ -1,0 +1,11 @@
+.payments {
+  .payments-item {
+    font-size: 45px;
+    margin-right: 35px;
+    color: #999;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+<body>
+<%= require('../partials/top-menu.html') %>
+<section class="subheader">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-md-10 pl-default">
+                <nav class="nav">
+                    <a class="nav-link underline" href="/blog.html">Плитка</a>
+                    <a class="nav-link" href="/blog-list.html">Список</a>
+                </nav>
+            </div>
+            <div class="col-md-2 pr-default">
+                <div class="subheader__search">
+                    <%= require('../partials/subheader-search.html') %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-list">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6 d-none d-md-block">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 03.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <a href="/blog-detail.html">
+                            <span>“Rethinking” Where is my plastic bag?</span>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="blog-list__item-content d-md-none">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 03.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <a href="/blog-detail.html">
+                            <span>“Rethinking” Where is my plastic bag?</span>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+                <a href="/blog-detail.html">
+                    <picture>
+                        <source srcset="img/blog/blog2-768.jpg" media="(max-width: 767px)">
+                        <source srcset="img/blog/blog2-576.jpg" media="(max-width: 575px)">
+                        <img src="img/blog/blog2.jpg" alt="" class="img-fluid">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="row no-gutters blog-list__item">
+            <div class="col-md-6 col-sm-12">
+                <div class="blog-list__item-content d-md-none">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 03.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <a href="/blog-detail.html">
+                            <span>“Rethinking” Where is my plastic bag?</span>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+                <a href="/blog-detail.html">
+                    <picture>
+                        <source srcset="img/blog/blog1-768.jpg" media="(max-width: 767px)">
+                        <source srcset="img/blog/blog1-576.jpg" media="(max-width: 575px)">
+                        <img src="img/blog/blog1.jpg" alt="" class="img-fluid">
+                    </picture>
+                </a>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <div class="blog-list__item-content">
+                    <div class="blog-list__item-date">
+                        <span>by WHO I AM Gallery > 03.05.2018</span>
+                    </div>
+                    <div class="blog-list__item-header">
+                        <a href="/blog-detail.html">
+                            <span>“Rethinking” Where is my plastic bag?</span>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="no-underhover blog-list__item-more">
+                        More
+                        <%= require('../partials/svg-icons/_arrow-right-white.html') %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%= require('../partials/footer.html') %>
+</body>
+</html>
