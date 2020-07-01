@@ -139,15 +139,27 @@
       &.active {
         left: 0;
       }
+      @media (max-width: 991px) {
+        top: 20px;
+      }
+      @media (max-width: 660px) {
+        padding: 0;
+      }
     }
     &--header {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 660px) {
+        padding: 0 20px;
+      }
       .close {
         opacity: 1;
         cursor: pointer;
         transform: translateX(-20px);
         transition: all 0.3s ease-out;
+        @media (max-width: 1024px) {
+          transform: translateX(0);
+        }
         &:hover {
           transform: translateX(0);
         }
@@ -161,6 +173,10 @@
       p {
         font-size: 20px;
         cursor: pointer;
+        @media (max-width: 991px) {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
         &.active {
           text-decoration: underline;
         }
@@ -168,6 +184,12 @@
     }
     &--body {
       padding-bottom: 50px;
+      @media (max-width: 991px) {
+        padding-bottom: 20px;
+      }
+      @media (max-width: 365px) {
+        padding-bottom: 60px;
+      }
       table {
         margin-top: 20px;
         tr {
@@ -190,6 +212,21 @@
               min-width: 35px;
               font-size: 0.6em;
             }
+            @media (max-width: 991px) {
+              width: 30px;
+              min-width: 30px;
+              font-size: 0.5em;
+            }
+            @media (max-width: 768px) {
+              width: calc(100vw / 14);
+              min-width: calc(100vw / 14);
+              font-size: 1.4vw;
+            }
+            @media (max-width: 660px) {
+              width: calc(100vw / 12);
+              min-width: calc(100vw / 12);
+              font-size: 2vw;
+            }
           }
           td:first-child {
             width: 118px;
@@ -202,6 +239,19 @@
             @media (max-width: 1100px) {
               width: 70px;
               min-width: 70px;
+            }
+            @media (max-width: 991px) {
+              width: 60px;
+              min-width: 60px;
+            }
+            @media (max-width: 768px) {
+              width: calc(100vw / 7);
+              min-width: calc(100vw / 7);
+            }
+            @media (max-width: 660px) {
+              width: calc(100vw / 6);
+              min-width: calc(100vw / 6);
+              font-size: 1.4vw;
             }
           }
         }
