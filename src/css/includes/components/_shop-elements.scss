@@ -37,7 +37,6 @@
       width: 100%;
 
       &:hover {
-
       }
     }
   }
@@ -79,10 +78,12 @@
     &-sale {
       text-align: right;
       span {
-        color: #93302B;
+        color: #93302b;
       }
     }
-
+    &-btn-link {
+      text-decoration: underline;
+    }
     &-desc {
       margin-top: $defaultPadding;
     }
@@ -105,7 +106,7 @@
       svg {
         opacity: 0;
         width: 0;
-        transition: opacity .3s ease;
+        transition: opacity 0.3s ease;
       }
 
       &:hover {
@@ -113,9 +114,8 @@
           opacity: 1;
           margin-left: 10px;
           width: auto;
-          transition: opacity .3s ease;
+          transition: opacity 0.3s ease;
         }
-
       }
     }
 
@@ -123,6 +123,88 @@
       span {
         display: block;
         margin-bottom: 5px;
+      }
+    }
+  }
+  .size-guid {
+    &--wrapper {
+      padding: 0 35px;
+      position: absolute;
+      z-index: 10;
+      background: #fff;
+      left: 100%;
+      width: 100%;
+      top: 50px;
+      transition: all 0.5s ease-out;
+      &.active {
+        left: 0;
+      }
+    }
+    &--header {
+      display: flex;
+      justify-content: space-between;
+      .close {
+        opacity: 1;
+        cursor: pointer;
+        transform: translateX(-20px);
+        transition: all 0.3s ease-out;
+        &:hover {
+          transform: translateX(0);
+        }
+      }
+    }
+    &--selector {
+      width: 60px;
+      justify-content: space-between;
+      display: flex;
+
+      p {
+        font-size: 20px;
+        cursor: pointer;
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+    &--body {
+      padding-bottom: 50px;
+      table {
+        margin-top: 20px;
+        tr {
+          &.thead-light {
+            background-color: rgba(196, 196, 196, 0.3);
+          }
+          td {
+            border: solid 1px #c4c4c4;
+            width: 59px;
+            min-width: 59px;
+            padding: 12px 0;
+            text-align: center;
+            @media (max-width: 1440px) {
+              width: 45px;
+              min-width: 45px;
+              font-size: 0.8em;
+            }
+            @media (max-width: 1100px) {
+              width: 35px;
+              min-width: 35px;
+              font-size: 0.6em;
+            }
+          }
+          td:first-child {
+            width: 118px;
+            min-width: 118px;
+            text-transform: uppercase;
+            @media (max-width: 1440px) {
+              width: 100px;
+              min-width: 100px;
+            }
+            @media (max-width: 1100px) {
+              width: 70px;
+              min-width: 70px;
+            }
+          }
+        }
       }
     }
   }
