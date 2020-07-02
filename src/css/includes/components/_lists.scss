@@ -61,7 +61,6 @@
           display: block;
         }
       }
-
     }
 
     &-counter {
@@ -127,7 +126,7 @@
       font-size: 14px;
 
       .more-arrow {
-        transition: transform .3s ease;
+        transition: transform 0.3s ease;
       }
 
       svg {
@@ -139,7 +138,7 @@
 
         .more-arrow {
           transform: translateX(-10px);
-          transition: transform .3s ease;
+          transition: transform 0.3s ease;
         }
       }
     }
@@ -160,4 +159,9 @@
       }
     }
   }
+}
+
+.clear-list {
+  list-style: none;
+  padding-left: 0;
 }

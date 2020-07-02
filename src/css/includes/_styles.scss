@@ -251,6 +251,27 @@ h1,
   &__text {
     padding: $defaultPadding;
 
+    h1 {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+    }
+    p,
+    li {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 100;
+      padding-bottom: 1em;
+      &.h5 {
+        padding-top: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+
     a {
       text-decoration: underline;
     }
@@ -289,6 +310,11 @@ h1,
         padding: 42px;
         font-size: 12px;
       }
+    }
+  }
+  &__about {
+    h1 {
+      font-size: 5.2vw;
     }
   }
 }
@@ -604,5 +630,77 @@ h1,
 
   &--width2 {
     width: 400px;
+  }
+}
+.big-icons {
+  width: 880px;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+  @media (max-width: 575px) {
+    margin: 0 auto;
+  }
+  &__item {
+    width: calc(820px / 4);
+    @media (max-width: 991px) {
+      width: calc(700px / 4);
+    }
+    @media (max-width: 767px) {
+      width: 25%;
+    }
+    @media (max-width: 575px) {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    border-right: 1px solid #e5e5e5;
+    padding: 0 3em;
+    @media (max-width: 991px) {
+      padding: 0 2em;
+    }
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+      padding-left: 4.5em;
+      @media (max-width: 991px) {
+        padding-left: 3em;
+      }
+      @media (max-width: 767px) {
+        padding: 0 3em;
+      }
+      @media (max-width: 575px) {
+        border-color: transparent;
+      }
+    }
+    &:last-child {
+      border-color: transparent;
+    }
+    svg {
+      height: 100px;
+      margin-right: auto;
+      @media (max-width: 767px) {
+        height: 60px;
+      }
+      @media (max-width: 575px) {
+        margin-left: auto;
+      }
+    }
+    p {
+      padding-top: 10px;
+      font-size: 1em;
+      @media (max-width: 991px) {
+        font-size: 0.8em;
+      }
+      @media (max-width: 767px) {
+        line-height: 1.2em;
+      }
+      @media (max-width: 575px) {
+        margin: 0 auto;
+        max-width: 120px;
+        font-size: 0.8em;
+      }
+      padding-top: 1em;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
   }
 }
