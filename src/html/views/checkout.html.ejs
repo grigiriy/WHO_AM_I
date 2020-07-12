@@ -1,187 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= require('../partials/head.html') %>
-<body>
-<%= require('../partials/top-menu.html') %>
-<section class="subheader">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-12 pl-default">
-                <%= require('../partials/svg-icons/_arrow-back-icon.html') %>
-                <span class="subheader__page-title">Checkout</span>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="checkout">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
-                <div class="checkout-list">
-                    <div class="checkout-list__item d-flex flex-wrap justify-content-between">
-                        <div class="checkout-list__item-image">
-                            <picture>
-                                <source srcset="img/checkout-item.jpg" media="(max-width: 768px)">
-                                <img src="img/checkout-item.jpg" alt="">
-                            </picture>
-                        </div>
-                        <div class="checkout-list__item-info">
-                            <a href="javascript:void(0);" class="remove-item no-underhover">
-                                <%= require('../partials/svg-icons/_close-icon.html') %>
-                            </a>
-                            <div class="checkout-list__item-counter">
-                                <%= require('../partials/svg-icons/_plus-minus-btns.html') %>
-                            </div>
-                            <span class="checkout-list__item-info___title">Slip dress on thin straps</span>
-                            <div class="checkout-list__item-info___params">
-                                <span>Size: S</span> <span>S</span>
-                                <span>color: white</span>
-                            </div>
-                            <div class="checkout-list__item-info___price">
-                                <span>price: 140 &euro;</span>
-                                <span>count: 1</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkout-list__item d-flex flex-wrap justify-content-between">
-                        <div class="checkout-list__item-image">
-                            <picture>
-                                <source srcset="img/checkout-item.jpg" media="(max-width: 768px)">
-                                <img src="img/checkout-item.jpg" alt="">
-                            </picture>
-                        </div>
-                        <div class="checkout-list__item-info">
-                            <a href="javascript:void(0);" class="remove-item no-underhover">
-                                <%= require('../partials/svg-icons/_close-icon.html') %>
-                            </a>
-                            <div class="checkout-list__item-counter">
-                                <%= require('../partials/svg-icons/_plus-minus-btns.html') %>
-                            </div>
-                            <span class="checkout-list__item-info___title">Slip dress on thin straps</span>
-                            <div class="checkout-list__item-info___params">
-                                <span>Size: S</span> <span>S</span>
-                                <span>color: white</span>
-                            </div>
-                            <div class="checkout-list__item-info___price">
-                                <span>price: 140 &euro;</span>
-                                <span>count: 1</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="checkout-promo p-default">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-white" name="q" placeholder="укажите промокод"
-                                   aria-label="укажите промокод"
-                                   required aria-describedby="basic-addon2">
-                            <button type="submit" class="btn-search">
-                                <i class="fa fa-play"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="checkout-total d-flex flex-wrap justify-content-between p-default">
-                    <span>Сумма заказа</span>
-                    <span>390 &euro;</span>
-                </div>
-                <div class="checkout-order">
-                    <button class="btn btn-dark" type="submit">Place order</button>
-                </div>
-                <div class="checkout-desc">
-                    <p>
-                        Нажимая на кнопку "Сделать заказ!", я подтверждаю свое согласие на обработку персональных данных в
-                        соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
-                        Договора-оферты и Политики конфиденциальности
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
-                <div class="checkout-container">
-                    <span class="header-gray text-uppercase mb-35">Данные получателя:</span>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white is-invalid" placeholder="Email *">
-                        <div class="invalid-feedback">
-                            заполните поле
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Получатель">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Телефон *">
-                    </div>
-                    <div class="form-group">
-                        <textarea type="text" class="form-control bg-white" placeholder="Комментарий"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Почтовый индекс">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Область">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Город">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Улица">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Дом">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control bg-white" placeholder="Квартира">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
-                <div class="checkout-container border-bottom">
-                    <span class="header-gray text-uppercase mb-35">Варианты доставки:</span>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Курьер</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Почта России</label>
-                    </div>
-                </div>
-                <div class="checkout-container">
-                    <span class="header-gray text-uppercase mb-35">Способо оплаты:</span>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="payment">
-                        <label class="custom-control-label" for="customCheck3">Оплата наличными</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="payment">
-                        <label class="custom-control-label" for="customCheck4">Оплата банковскими картами и иным
-                            платёжными инструментами в сети Интернет</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5" name="payment">
-                        <label class="custom-control-label" for="customCheck5">Дебетовая электронная платёжная
-                            система</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio"
-                               class="custom-control-input is-invalid">
-                        <div class="invalid-feedback">
-                            заполните поле
-                        </div>
-                        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
 
+<body>
+    <%= require('../partials/top-menu.html') %>
+    <section class="subheader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-12 pl-default">
+                    <%= require('../partials/svg-icons/_arrow-back-icon.html') %>
+                    <span class="subheader__page-title">Checkout</span>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<%= require('../partials/footer.html') %>
+    </section>
+    <section class="checkout">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
+                    <div class="checkout-list">
+                        <div class="checkout-list__item d-flex flex-wrap justify-content-between">
+                            <div class="checkout-list__item-image">
+                                <picture>
+                                    <source srcset="img/checkout-item.jpg" media="(max-width: 768px)">
+                                    <img src="img/checkout-item.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="checkout-list__item-info">
+                                <a href="javascript:void(0);" class="remove-item no-underhover">
+                                    <%= require('../partials/svg-icons/_close-icon.html') %>
+                                </a>
+                                <div class="checkout-list__item-counter">
+                                    <%= require('../partials/svg-icons/_plus-minus-btns.html') %>
+                                </div>
+                                <span class="checkout-list__item-info___title">Slip dress on thin straps</span>
+                                <div class="checkout-list__item-info___params">
+                                    <span>Size: S</span> <span>S</span>
+                                    <span>color: white</span>
+                                </div>
+                                <div class="checkout-list__item-info___price">
+                                    <span>price: 140 &euro;</span>
+                                    <span>count: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-list__item d-flex flex-wrap justify-content-between">
+                            <div class="checkout-list__item-image">
+                                <picture>
+                                    <source srcset="img/checkout-item.jpg" media="(max-width: 768px)">
+                                    <img src="img/checkout-item.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="checkout-list__item-info">
+                                <a href="javascript:void(0);" class="remove-item no-underhover">
+                                    <%= require('../partials/svg-icons/_close-icon.html') %>
+                                </a>
+                                <div class="checkout-list__item-counter">
+                                    <%= require('../partials/svg-icons/_plus-minus-btns.html') %>
+                                </div>
+                                <span class="checkout-list__item-info___title">Slip dress on thin straps</span>
+                                <div class="checkout-list__item-info___params">
+                                    <span>Size: S</span> <span>S</span>
+                                    <span>color: white</span>
+                                </div>
+                                <div class="checkout-list__item-info___price">
+                                    <span>price: 140 &euro;</span>
+                                    <span>count: 1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-promo p-default">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-white" name="q" placeholder="укажите промокод"
+                                    aria-label="укажите промокод" required aria-describedby="basic-addon2">
+                                <button type="submit" class="btn-search">
+                                    <i class="fa fa-play"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="checkout-total d-flex flex-wrap justify-content-between p-default">
+                        <span>Сумма заказа</span>
+                        <span>390 &euro;</span>
+                    </div>
+                    <div class="checkout-order">
+                        <button class="btn btn-dark" type="submit"
+                            onclick="window.location.href='/checkout-success.html'">Place order</button>
+                    </div>
+                    <div class="checkout-desc">
+                        <p>
+                            Нажимая на кнопку "Сделать заказ!", я подтверждаю свое согласие на обработку персональных
+                            данных в
+                            соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+                            Договора-оферты и Политики конфиденциальности
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
+                    <div class="checkout-container">
+                        <span class="header-gray text-uppercase mb-35">Данные получателя:</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white is-invalid" placeholder="Email *">
+                            <div class="invalid-feedback">
+                                заполните поле
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Получатель">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Телефон *">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control bg-white" placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Почтовый индекс">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Область">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Город">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Улица">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Дом">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control bg-white" placeholder="Квартира">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
+                    <div class="checkout-container border-bottom">
+                        <span class="header-gray text-uppercase mb-35">Варианты доставки:</span>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Курьер</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Почта России</label>
+                        </div>
+                    </div>
+                    <div class="checkout-container">
+                        <span class="header-gray text-uppercase mb-35">Способо оплаты:</span>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" name="payment">
+                            <label class="custom-control-label" for="customCheck3">Оплата наличными</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" name="payment">
+                            <label class="custom-control-label" for="customCheck4">Оплата банковскими картами и иным
+                                платёжными инструментами в сети Интернет</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5" name="payment">
+                            <label class="custom-control-label" for="customCheck5">Дебетовая электронная платёжная
+                                система</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio"
+                                class="custom-control-input is-invalid">
+                            <div class="invalid-feedback">
+                                заполните поле
+                            </div>
+                            <label class="custom-control-label" for="customRadio2">Or toggle this other custom
+                                radio</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12 checkout-col">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= require('../partials/footer.html') %>
 </body>
+
 </html>

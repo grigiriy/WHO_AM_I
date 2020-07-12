@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('../partials/head.html') %>
+
+<body>
+    <%= require('../partials/top-menu.html') %>
+    <section class="subheader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-12 pl-default">
+                    <%= require('../partials/svg-icons/_arrow-back-icon.html') %>
+                    <span class="subheader__page-title">Checkout</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="checkout">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12 checkout-success">
+                    <div class="checkout-container">
+                        <h3>Спасибо за ваш заказ!</h3>
+                        <p>В ближайшее время с вами свяжется наш менеджер</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= require('../partials/footer.html') %>
+</body>
+
+</html>
