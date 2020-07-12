@@ -32,8 +32,39 @@ function detectMob() {
     return navigator.userAgent.match(toMatchItem);
   });
 }
+let cw = document.body.clientWidth;
+
+const search_input = $('#searchForm');
+
+function place_serach_wrap(search_wrap) {
+  search_wrap.append(search_input);
+}
+
+function detect_search_replacement(cw) {
+  const sh_search_wrap = $('.subheader__search');
+  const mob_search_wrap = $('.mobile__search');
+  const def_search_wrap = $('.header__search');
+  if (cw < 1150 && cw >= 992) {
+    place_serach_wrap(sh_search_wrap);
+  } else if (cw < 992) {
+    place_serach_wrap(sh_search_wrap);
+    // place_serach_wrap(mob_search_wrap);
+    mob_search_wrap.on('click', function () {
+      sh_search_wrap.toggleClass('active');
+    });
+  } else {
+    place_serach_wrap(def_search_wrap);
+  }
+}
+
+$(window).resize(function () {
+  cw = document.body.clientWidth;
+  detect_search_replacement(cw);
+});
 
 $(function () {
+  detect_search_replacement(cw);
+
   let menu = $('.dropdown-menu-custom[data-target="dropdownMenuSubHeader"]');
 
   function hideMenu() {

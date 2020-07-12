@@ -185,7 +185,13 @@
     }
   }
 }
-
+// Extra large devices (desktops, less than 1400px)
+@media (max-width: 1399px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
   .main-video {
@@ -198,10 +204,6 @@
   }
   .shop-detail__container-slider {
     margin-top: 50px;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
   }
   .header-top__contacts .phone {
     margin-right: 10px;
