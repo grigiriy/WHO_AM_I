@@ -35,24 +35,28 @@ function detectMob() {
 let cw = document.body.clientWidth;
 
 const search_input = $('#searchForm');
+const mob_search_btn = $('#mobSearchBtn');
+const def_search_wrap = $('.header__search');
+const sh_search_wrap = $('.subheader__search');
+const mob_search_wrap = $('.mobile__search');
 
 function place_serach_wrap(search_wrap) {
   search_wrap.append(search_input);
 }
 
+mob_search_btn.click(function () {
+  sh_search_wrap.toggleClass('active');
+});
+
 function detect_search_replacement(cw) {
-  const sh_search_wrap = $('.subheader__search');
-  const mob_search_wrap = $('.mobile__search');
-  const def_search_wrap = $('.header__search');
   if (cw < 1150 && cw >= 992) {
     place_serach_wrap(sh_search_wrap);
+    def_search_wrap.append(mob_search_btn);
   } else if (cw < 992) {
+    mob_search_wrap.append(mob_search_btn);
     place_serach_wrap(sh_search_wrap);
-    // place_serach_wrap(mob_search_wrap);
-    mob_search_wrap.on('click', function () {
-      sh_search_wrap.toggleClass('active');
-    });
   } else {
+    mob_search_wrap.append(mob_search_btn);
     place_serach_wrap(def_search_wrap);
   }
 }

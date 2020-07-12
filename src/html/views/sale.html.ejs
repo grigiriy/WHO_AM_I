@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= require('../partials/head.html') %>
+
 <body>
-<%= require('../partials/top-menu.html') %>
-<section class="subheader">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-md-10 pl-default">
-                <nav class="nav">
-                    <a class="nav-link" href="#">Man</a>
-                    <a class="nav-link" href="#">Woman</a>
-                    <a class="nav-link" href="#">Accessories</a>
-                    <a class="nav-link active" href="#">Sale</a>
-                </nav>
-            </div>
-            <div class="col-md-2 pr-default">
-                <div class="subheader__search">
-                    <%= require('../partials/subheader-search.html') %>
+    <%= require('../partials/top-menu.html') %>
+    <section class="subheader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-10 pl-default">
+                    <nav class="nav">
+                        <a class="nav-link" href="#">Man</a>
+                        <a class="nav-link" href="#">Woman</a>
+                        <a class="nav-link" href="#">Accessories</a>
+                        <a class="nav-link active" href="#">Sale</a>
+                    </nav>
                 </div>
             </div>
         </div>
+    </section>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters shop-list">
+            <%= require('../partials/shop-list.html') %>
+            <%= require('../partials/shop-list.html') %>
+        </div>
     </div>
-</section>
-<div class="container-fluid p-0">
-    <div class="row no-gutters shop-list">
-        <%= require('../partials/shop-list.html') %>
-        <%= require('../partials/shop-list.html') %>
-    </div>
-</div>
-<%= require('../partials/footer.html') %>
+    <%= require('../partials/footer.html') %>
 </body>
+
 </html>

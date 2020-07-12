@@ -56,6 +56,8 @@ h1,
   .navbar {
     padding-left: $defaultPadding;
     padding-right: $defaultPadding;
+    z-index: 11;
+    background: #fff;
   }
 
   .navbar-brand {
@@ -734,11 +736,33 @@ h1,
     width: 150px;
   }
 }
-@media (max-width: 992px) {
-  .subheader__search {
-    display: none;
-    &.active {
-      display: block;
-    }
+
+.subheader__search {
+  display: none;
+  position: absolute;
+  top: 52px;
+  width: 100vw;
+  left: 0;
+  z-index: 10;
+  padding: 10px 35px;
+  background: #e5e5e5;
+  @media (max-width: 992px) {
+    top: 56px;
+  }
+  @media (max-width: 550px) {
+    top: 50px;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+.mobile__search {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .mobile__search {
+    display: block;
   }
 }

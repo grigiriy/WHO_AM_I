@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= require('../partials/head.html') %>
+
 <body>
-<%= require('../partials/top-menu.html') %>
-<section class="subheader">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters align-items-center">
-            <div class="align-items-baseline col-md-10 d-flex flex-column flex-md-row align-content-center pl-default">
-                <nav class="nav">
-                    <a class="nav-link underline" href="/art-art.html">Art</a>
-                    <a class="nav-link" href="/art.html">Artist</a>
-                </nav>
-                <div class="filter d-flex flex-wrap">
-                    <a href="javascript:void(0);" class="text-uppercase filter-nav-icon" id="dropdownMenuSubHeader">
-                        <%= require('../partials/svg-icons/_filter-icon.html') %>
-                        Filter
-                    </a>
-                    <div class="filter-params ml-1">
-                        <span class="filter-params__item">
-                            <span class="filter-params__list">[artist: Jakob Yakubov]</span>
-                            <a href="javascript:void(0);">
-                                <span class="filter-params__item-remove">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5.5" cy="5.5" r="5" stroke="black"/>
-                                    <line x1="0.646447" y1="10.6464" x2="10.6464" y2="0.646447" stroke="black"/>
-                                    </svg>
-                                </span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 pr-default">
-                <div class="subheader__search">
-                    <%= require('../partials/subheader-search.html') %>
-                </div>
-            </div>
-            <div class="dropdown-menu-custom main-menu" data-target="dropdownMenuSubHeader">
-                <!--<a class="dropdown-item" href="#">Action</a>-->
-                <div class="row no-gutters">
-                    <div class="col-md-3">
-                        <div class="dropdown-menu__content">
-                            <span class="header-gray text-uppercase">Category</span>
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="javascript:void(0);">Outerwear</a>
-                                <a class="nav-link" href="javascript:void(0);">Sweatshirts</a>
-                                <a class="nav-link" href="javascript:void(0);">Knitwear</a>
-                                <a class="nav-link" href="javascript:void(0);">T-shirts</a>
-                                <a class="nav-link" href="javascript:void(0);">Shirts</a>
-                                <a class="nav-link" href="javascript:void(0);">Suit jackets</a>
-                                <a class="nav-link" href="javascript:void(0);">Jeans</a>
-                                <a class="nav-link" href="javascript:void(0);">Trousers</a>
-                                <a class="nav-link" href="javascript:void(0);">Children</a>
-                            </nav>
+    <%= require('../partials/top-menu.html') %>
+    <section class="subheader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div
+                    class="align-items-baseline col-md-10 d-flex flex-column flex-md-row align-content-center pl-default">
+                    <nav class="nav">
+                        <a class="nav-link underline" href="/art-art.html">Art</a>
+                        <a class="nav-link" href="/art.html">Artist</a>
+                    </nav>
+                    <div class="filter d-flex flex-wrap">
+                        <a href="javascript:void(0);" class="text-uppercase filter-nav-icon" id="dropdownMenuSubHeader">
+                            <%= require('../partials/svg-icons/_filter-icon.html') %>
+                            Filter
+                        </a>
+                        <div class="filter-params ml-1">
+                            <span class="filter-params__item">
+                                <span class="filter-params__list">[artist: Jakob Yakubov]</span>
+                                <a href="javascript:void(0);">
+                                    <span class="filter-params__item-remove">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="5.5" cy="5.5" r="5" stroke="black" />
+                                            <line x1="0.646447" y1="10.6464" x2="10.6464" y2="0.646447"
+                                                stroke="black" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </span>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="dropdown-menu__content">
-                            <span class="header-gray text-uppercase">Color</span>
-                            <nav class="nav flex-column colors-list">
-                                <a class="nav-link colors-list__item red" href="javascript:void(0);">red</a>
-                                <a class="nav-link colors-list__item orange"
-                                   href="javascript:void(0);">orange</a>
-                                <a class="nav-link colors-list__item yellow"
-                                   href="javascript:void(0);">yellow</a>
-                                <a class="nav-link colors-list__item green" href="javascript:void(0);">green</a>
-                                <a class="nav-link colors-list__item light-green" href="javascript:void(0);">light
-                                    green</a>
-                                <a class="nav-link colors-list__item blue" href="javascript:void(0);">blue</a>
-                                <a class="nav-link colors-list__item light-blue" href="javascript:void(0);">light
-                                    blue</a>
-                                <a class="nav-link colors-list__item purple"
-                                   href="javascript:void(0);">purple</a>
-                                <a class="nav-link colors-list__item black" href="javascript:void(0);">black</a>
-                                <a class="nav-link colors-list__item white" href="javascript:void(0);">white</a>
-                            </nav>
+                </div>
+                <div class="dropdown-menu-custom main-menu" data-target="dropdownMenuSubHeader">
+                    <!--<a class="dropdown-item" href="#">Action</a>-->
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <div class="dropdown-menu__content">
+                                <span class="header-gray text-uppercase">Category</span>
+                                <nav class="nav flex-column">
+                                    <a class="nav-link" href="javascript:void(0);">Outerwear</a>
+                                    <a class="nav-link" href="javascript:void(0);">Sweatshirts</a>
+                                    <a class="nav-link" href="javascript:void(0);">Knitwear</a>
+                                    <a class="nav-link" href="javascript:void(0);">T-shirts</a>
+                                    <a class="nav-link" href="javascript:void(0);">Shirts</a>
+                                    <a class="nav-link" href="javascript:void(0);">Suit jackets</a>
+                                    <a class="nav-link" href="javascript:void(0);">Jeans</a>
+                                    <a class="nav-link" href="javascript:void(0);">Trousers</a>
+                                    <a class="nav-link" href="javascript:void(0);">Children</a>
+                                </nav>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="dropdown-menu__content">
-                            <span class="header-gray text-uppercase">Size</span>
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="javascript:void(0);">XXS</a>
-                                <a class="nav-link" href="javascript:void(0);">XS</a>
-                                <a class="nav-link" href="javascript:void(0);">S</a>
-                                <a class="nav-link" href="javascript:void(0);">M</a>
-                                <a class="nav-link" href="javascript:void(0);">L</a>
-                                <a class="nav-link" href="javascript:void(0);">XL</a>
-                                <a class="nav-link" href="javascript:void(0);">XXL</a>
-                            </nav>
+                        <div class="col-md-3">
+                            <div class="dropdown-menu__content">
+                                <span class="header-gray text-uppercase">Color</span>
+                                <nav class="nav flex-column colors-list">
+                                    <a class="nav-link colors-list__item red" href="javascript:void(0);">red</a>
+                                    <a class="nav-link colors-list__item orange" href="javascript:void(0);">orange</a>
+                                    <a class="nav-link colors-list__item yellow" href="javascript:void(0);">yellow</a>
+                                    <a class="nav-link colors-list__item green" href="javascript:void(0);">green</a>
+                                    <a class="nav-link colors-list__item light-green" href="javascript:void(0);">light
+                                        green</a>
+                                    <a class="nav-link colors-list__item blue" href="javascript:void(0);">blue</a>
+                                    <a class="nav-link colors-list__item light-blue" href="javascript:void(0);">light
+                                        blue</a>
+                                    <a class="nav-link colors-list__item purple" href="javascript:void(0);">purple</a>
+                                    <a class="nav-link colors-list__item black" href="javascript:void(0);">black</a>
+                                    <a class="nav-link colors-list__item white" href="javascript:void(0);">white</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dropdown-menu__content">
+                                <span class="header-gray text-uppercase">Size</span>
+                                <nav class="nav flex-column">
+                                    <a class="nav-link" href="javascript:void(0);">XXS</a>
+                                    <a class="nav-link" href="javascript:void(0);">XS</a>
+                                    <a class="nav-link" href="javascript:void(0);">S</a>
+                                    <a class="nav-link" href="javascript:void(0);">M</a>
+                                    <a class="nav-link" href="javascript:void(0);">L</a>
+                                    <a class="nav-link" href="javascript:void(0);">XL</a>
+                                    <a class="nav-link" href="javascript:void(0);">XXL</a>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters art-list">
+            <%= require('../partials/art-list.html') %>
+        </div>
     </div>
-</section>
-<div class="container-fluid p-0">
-    <div class="row no-gutters art-list">
-        <%= require('../partials/art-list.html') %>
-    </div>
-</div>
-<%= require('../partials/footer.html') %>
+    <%= require('../partials/footer.html') %>
 </body>
+
 </html>

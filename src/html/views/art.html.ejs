@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= require('../partials/head.html') %>
+
 <body>
-<%= require('../partials/top-menu.html') %>
-<section class="subheader">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters align-items-center">
-            <div class="col-md-10 pl-default">
-                <nav class="nav">
-                    <a class="nav-link" href="/art-art.html">Art</a>
-                    <a class="nav-link underline" href="/art.html">Artist</a>
-                </nav>
-            </div>
-            <div class="col-md-2 pr-default">
-                <div class="subheader__search">
-                    <%= require('../partials/subheader-search.html') %>
+    <%= require('../partials/top-menu.html') %>
+    <section class="subheader">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-10 pl-default">
+                    <nav class="nav">
+                        <a class="nav-link" href="/art-art.html">Art</a>
+                        <a class="nav-link underline" href="/art.html">Artist</a>
+                    </nav>
                 </div>
             </div>
         </div>
+    </section>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters art-list">
+            <%= require('../partials/art-artists-list.html') %>
+        </div>
     </div>
-</section>
-<div class="container-fluid p-0">
-    <div class="row no-gutters art-list">
-        <%= require('../partials/art-artists-list.html') %>
-    </div>
-</div>
-<%= require('../partials/footer.html') %>
+    <%= require('../partials/footer.html') %>
 </body>
+
 </html>
