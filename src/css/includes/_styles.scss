@@ -56,10 +56,18 @@ h1,
   .navbar {
     padding-left: $defaultPadding;
     padding-right: $defaultPadding;
+    z-index: 11;
+    background: #fff;
   }
 
   .navbar-brand {
     font-weight: bold;
+    @media (min-width: 992px) and (max-width: 1150px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 350px) {
+      font-size: 1rem;
+    }
   }
 
   .nav-link {
@@ -95,6 +103,9 @@ h1,
     width: 90px;
     text-align: right;
     margin-right: -20px;
+    @media (max-width: 1200px) {
+      width: auto;
+    }
 
     &.has-items {
       .cart-icon {
@@ -702,5 +713,56 @@ h1,
       text-transform: uppercase;
       font-weight: normal;
     }
+  }
+}
+
+.header__search {
+  .form-control {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: inherit;
+    padding-left: 0;
+    padding-right: 25px;
+    height: 25px;
+    transition: all 0.2s;
+    * {
+      transition: all 0.2s;
+    }
+  }
+  .btn-search {
+    margin-left: -25px;
+  }
+  @media (max-width: 1250px) and (min-width: 1150px) {
+    width: 150px;
+  }
+}
+
+.subheader__search {
+  display: none;
+  position: absolute;
+  top: 52px;
+  width: 100vw;
+  left: 0;
+  z-index: 10;
+  padding: 10px 35px;
+  background: #e5e5e5;
+  @media (max-width: 992px) {
+    top: 56px;
+  }
+  @media (max-width: 550px) {
+    top: 50px;
+  }
+  &.active {
+    display: block;
+  }
+}
+
+.mobile__search {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .mobile__search {
+    display: block;
   }
 }

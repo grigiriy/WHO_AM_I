@@ -32,8 +32,43 @@ function detectMob() {
     return navigator.userAgent.match(toMatchItem);
   });
 }
+let cw = document.body.clientWidth;
+
+const search_input = $('#searchForm');
+const mob_search_btn = $('#mobSearchBtn');
+const def_search_wrap = $('.header__search');
+const sh_search_wrap = $('.subheader__search');
+const mob_search_wrap = $('.mobile__search');
+
+function place_serach_wrap(search_wrap) {
+  search_wrap.append(search_input);
+}
+
+mob_search_btn.click(function () {
+  sh_search_wrap.toggleClass('active');
+});
+
+function detect_search_replacement(cw) {
+  if (cw < 1150 && cw >= 992) {
+    place_serach_wrap(sh_search_wrap);
+    def_search_wrap.append(mob_search_btn);
+  } else if (cw < 992) {
+    mob_search_wrap.append(mob_search_btn);
+    place_serach_wrap(sh_search_wrap);
+  } else {
+    mob_search_wrap.append(mob_search_btn);
+    place_serach_wrap(def_search_wrap);
+  }
+}
+
+$(window).resize(function () {
+  cw = document.body.clientWidth;
+  detect_search_replacement(cw);
+});
 
 $(function () {
+  detect_search_replacement(cw);
+
   let menu = $('.dropdown-menu-custom[data-target="dropdownMenuSubHeader"]');
 
   function hideMenu() {
