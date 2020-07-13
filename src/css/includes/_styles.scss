@@ -716,35 +716,13 @@ h1,
   }
 }
 
-.header__search {
-  .form-control {
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom-color: inherit;
-    padding-left: 0;
-    padding-right: 25px;
-    height: 25px;
-    transition: all 0.2s;
-    * {
-      transition: all 0.2s;
-    }
-  }
-  .btn-search {
-    margin-left: -25px;
-  }
-  @media (max-width: 1250px) and (min-width: 1150px) {
-    width: 150px;
-  }
-}
-
 .subheader__search {
-  display: none;
   position: absolute;
   top: 52px;
   width: 100vw;
   left: 0;
   z-index: 10;
-  padding: 10px 35px;
+  padding: 10px 35px 10px 20px;
   background: #e5e5e5;
   @media (max-width: 992px) {
     top: 56px;
@@ -752,17 +730,92 @@ h1,
   @media (max-width: 550px) {
     top: 50px;
   }
-  &.active {
-    display: block;
+}
+body:not(.search_page) {
+  .header__search {
+    .form-control {
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-color: inherit;
+      padding-left: 0;
+      padding-right: 25px;
+      height: 25px;
+      transition: all 0.2s;
+      * {
+        transition: all 0.2s;
+      }
+    }
+    .btn-search {
+      margin-left: -25px;
+    }
+    @media (max-width: 1250px) and (min-width: 1151px) {
+      width: 150px;
+    }
+    @media (max-width: 1150px) {
+      width: auto;
+    }
+  }
+  .subheader__search {
+    transition: all 0.2s;
+    transform: translateY(-56px);
+    &.active {
+      transform: translateY(0);
+    }
+  }
+
+  .mobile__search {
+    display: none;
+  }
+  @media (max-width: 1150px) {
+    .mobile__search {
+      display: block;
+    }
+  }
+  #searchForm {
+    .btn-search-close {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 5px 0;
+      order: 2;
+    }
+    .btn-search-close {
+      display: none;
+    }
+
+    @media (max-width: 1150px) {
+      .btn-search-close {
+        display: block;
+      }
+      .btn-search {
+        order: 0;
+        margin-right: 0.5rem;
+      }
+      .form-control {
+        order: 1;
+      }
+    }
   }
 }
-
-.mobile__search {
-  display: none;
-}
-
-@media (max-width: 1150px) {
-  .mobile__search {
-    display: block;
+body.search_page {
+  .header__search {
+    display: none !important;
+  }
+  #mobSearchBtn {
+    display: none !important;
+  }
+  .btn-search {
+    order: 0;
+    margin-right: 0.5rem;
+  }
+  .form-control {
+    order: 1;
+  }
+  #searchForm {
+    .btn-search-close {
+      padding: 5px 0;
+      order: 2;
+    }
   }
 }
