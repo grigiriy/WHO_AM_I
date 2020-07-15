@@ -23,7 +23,6 @@ input,
 
 .colors-list,
 .text-list-checkbox {
-
   &.big {
     .custom-checkbox {
       display: inline-block;
@@ -50,9 +49,10 @@ input,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin: .5rem 0 0 !important;
+    margin: 0.5rem 0 0 !important;
 
     &.colored {
+      margin: 0.5rem 0 0.25rem !important;
       .checkmark {
         &.red {
           background-color: $paletteRed;
@@ -133,7 +133,7 @@ input,
 
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
-    content: "";
+    content: '';
     position: absolute;
     display: none;
   }
@@ -158,7 +158,7 @@ input,
   .custom-checkbox {
     padding: 0 !important;
 
-    input[type="checkbox"]:checked ~ .text-container {
+    input[type='checkbox']:checked ~ .text-container {
       text-decoration: underline;
     }
   }
