@@ -20,6 +20,21 @@ yarn build
 
 ### Features:
 
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* HTML loader via [html-loader](https://github.com/webpack-contrib/html-loader)
+- ES6 Support via [babel](https://babeljs.io/) (v7)
+- SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
+- HTML loader via [html-loader](https://github.com/webpack-contrib/html-loader)
+
+PRs log:
+search_bug:
+
+- обновлениа версия jQuery (3.5.0 -> 3.5.1)
+- новый мета вьюпорт, предотвращающий автоматический зум в ios на инпуты
+- скорректированы отступы в хедере, чтобы не вылезало из под бегущей строки
+- временно отключен минификатор на билде - там странная ошибка - в отдельную ветку
+
+event_layout:
+
+- новый скрипт импортируется на странице event_page (imagesloaded)
+- на ней же добавлен новый скрипт-обработчик (внизу)
+- изменены размеры "кирпичной" сетки
+- изменены сами "кирпичи" - теперь изображение - бэкграунд, но наличие самого img все равно необходимо для вычисления ориентации "кирпича"
