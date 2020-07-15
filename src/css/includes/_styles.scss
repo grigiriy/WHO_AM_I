@@ -740,9 +740,9 @@ body:not(.search_page) {
       padding-left: 0;
       padding-right: 25px;
       height: 25px;
-      transition: all 0.2s;
+      transition: translate 0.2s;
       * {
-        transition: all 0.2s;
+        transition: translate 0.2s;
       }
     }
     .btn-search {
@@ -758,8 +758,10 @@ body:not(.search_page) {
   .subheader__search {
     transition: all 0.2s;
     transform: translateY(-56px);
+    opacity: 0;
     &.active {
       transform: translateY(0);
+      opacity: 1;
     }
   }
 
