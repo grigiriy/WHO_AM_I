@@ -150,7 +150,10 @@ h1,
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2;
-      max-height: 170px;
+      max-height: 250px;
+      label {
+        max-width: 50%;
+      }
     }
 
     .nav-link {
