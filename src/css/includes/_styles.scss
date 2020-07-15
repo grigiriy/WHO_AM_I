@@ -304,6 +304,9 @@ h1,
 
       &.text-fullwidth {
         max-width: 100%;
+        @media (min-width: 1180px) {
+          padding-right: 10px;
+        }
       }
 
       &.art {
