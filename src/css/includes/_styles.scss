@@ -298,10 +298,13 @@ h1,
       display: block;
       margin-top: 15px;
     }
-
     &-mini {
       max-width: 380px;
       font-size: 14px;
+
+      &.text-fullwidth {
+        max-width: 100%;
+      }
 
       &.art {
         margin-top: 95px;
@@ -635,12 +638,20 @@ h1,
 .filter {
   font-size: 14px;
 }
-
-.grid-item {
-  width: 300px;
-
-  &--width2 {
-    width: 400px;
+.grid {
+  margin: 0 -1px;
+  grid-sizer,
+  .grid-item {
+    // min-width: 300px;
+    width: 25%;
+    float: left;
+    img {
+      border: solid 1px #fff;
+    }
+    &--width2 {
+      // min-width: 400px;
+      width: 50%;
+    }
   }
 }
 .big-icons {
