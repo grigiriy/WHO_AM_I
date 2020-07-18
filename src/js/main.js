@@ -32,7 +32,6 @@ function detectMob() {
     return navigator.userAgent.match(toMatchItem);
   });
 }
-
 var cw = document.body.clientWidth;
 
 var search_input = $('#searchForm');
