@@ -78,8 +78,10 @@ function detect_search_replacement(cw) {
 }
 
 $(window).resize(function () {
-  cw = document.body.clientWidth;
-  detect_search_replacement(cw);
+  if (!detectMob()) {
+    cw = document.body.clientWidth;
+    detect_search_replacement(cw);
+  }
 });
 
 $(function () {
