@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" shrink-to-fit=no"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <title>Who Am</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+<link href="1.bundle.css" rel="stylesheet"><link href="bundle.css" rel="stylesheet"></head>
+
+<body>
+    <div class="row no-gutters running">
+    <marquee>-20% на SS20! Худи, свитшоты, спортивные брюки, футболки и другие актуальные вещи со скидками!</marquee>
+</div>
+<header class="header-top">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg py-2">
+                    <a class="navbar-brand" href="/">WHO / AM</a>
+                    <div class="ml-auto mr-2 mobile__search">
+                        <button type="submit" class="btn-search" id="mobSearchBtn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.5" cy="6.5" r="6" stroke="black" />
+                                <line x1="10.3536" y1="10.6464" x2="15.3536" y2="15.6464" stroke="black" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="nav-item d-block d-lg-none mr-2 mobile-item-lang">
+                        <a href="javascript:void(0);" class="nav-link active">
+                            RU
+                        </a>
+                        <span>/</span>
+                        <a href="javascript:void(0);" class="nav-link">
+                            EN
+                        </a>
+                    </div>
+                    <div class="cart d-block d-lg-none mr-2">
+                        <a href="/checkout.html" class="no-underhover">
+                            <span class="cart-icon">
+                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="5.5" width="16" height="12" stroke="black"></rect>
+                                    <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                        stroke="black"></path>
+                                </svg>
+                            </span>
+                            <!-- <span class="cart-title">Bag [2]</span>-->
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a href="/art-art.html" class="nav-link">
+                                    Art
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/fashion.html" class="nav-link">
+                                    Fashion
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="javascript:void(0);" class="nav-link">
+                                    Design
+                                </a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="/lookbook.html" class="nav-link">
+                                    Lookbook
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/blog.html" class="nav-link">
+                                    Blog
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="/events.html" class="nav-link">
+                                    Events
+                                </a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="/events.html" class="nav-link">
+                                    Exhibitions & Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/about.html" class="nav-link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" style="color: #5f48e9;" class="nav-link">
+                                    I am artist
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-lg-flex header__search pr-3">
+                            <form action="search.html" method="GET" id="searchForm">
+                                <div class="input-group">
+                                    <a class="btn-search-close ml-2" href="javascript:void(0)">
+                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.353553" y1="0.646447" x2="17.3536" y2="17.6464" stroke="black">
+                                            </line>
+                                            <line x1="17.3536" y1="1.35355" x2="0.353554" y2="18.3536" stroke="black">
+                                            </line>
+                                    </a>
+                                    </button>
+                                    <input type="text" class="form-control" name="q" placeholder="SEARCH"
+                                        aria-label="SEARCH" required aria-describedby="basic-addon2">
+                                    <button type="submit" class="btn-search">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.5" cy="6.5" r="6" stroke="black" />
+                                            <line x1="10.3536" y1="10.6464" x2="15.3536" y2="15.6464" stroke="black" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header-top__contacts d-flex">
+                            <div class="phone">
+                                <a href="tel:+79253373737">+7 (925) 337-37-37</a>
+                            </div>
+                            <div class="lang">
+                                <a class="dropdown-toggle" href="#" id="dropdownMenuLang" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Eng
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLang">
+                                    <a class="dropdown-item" href="#">Ru</a>
+                                    <a class="dropdown-item" href="#">Fr</a>
+                                    <a class="dropdown-item" href="#">Ch</a>
+                                </div>
+                            </div>
+                            <div class="cart has-items">
+                                <a href="/checkout.html" class="no-underhover">
+                                    <span class="cart-icon">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="5.5" width="16" height="12" stroke="black"></rect>
+                                            <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                                stroke="black"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="cart-title">Bag [2]</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="subheader__search"></div>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="content-page">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="content-page__text pb-0">
+                        <h1>Политика конфиденциальности</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-page__text">
+                        <p class="h5">О WHO/AM</p>
+                        <p>
+                            ИП Якубов Глеб Анатольевич является владельцем сайта ru.who-iam.com («Сайт»).
+                        </p>
+                        <p>
+                            Мы считаем своей обязанностью защищать вашу конфиденциальность. Мы собираем, храним и
+                            используем ваши персональные данные в соответствии с Законом РФ «О персональных данных»,
+                            N 152-ФЗ и другими применимыми местными законами.
+                        </p>
+                        <p class="h5">ОБЩЕЕ</p>
+                        <p>
+                            Пользуясь Сайтом, вы выражаете полное согласие с положениями настоящей Политики
+                            Конфиденциальности. В случае, если вы не согласны с настоящей Политикой, немедленно
+                            покиньте Сайт.
+                        </p>
+                        <p>
+                            Цель настоящей Политики Конфиденциальности - проинформировать вас о том,
+                            как мы будем использовать ваши персональные данные, которые вы нам предоставили через Сайт.
+                            Посещая наш Сайт, вы обязуетесь соблюдать настоящую Политику Конфиденциальности и Условия.
+                            Пожалуйста, ознакомьтесь с ней, прежде чем пользоваться Сайтом далее.
+                        </p>
+                        <p class="h5">ВАШИ ПЕРСОНАЛЬНЫЕ ДАННЫЕ И КАК МЫ ИХ ИСПОЛЬЗУЕМ</p>
+                        <p>
+                            Вы можете пользоваться большей частью нашего Сайта без предоставления
+                            каких-либо персональных данных. Однако если вы хотите отправить нам сообщение или
+                            пообщаться онлайн, тогда вам потребуется предоставить определённую информацию. Она может
+                            включать ваше имя, адрес или месторасположение, номер телефона и адрес электронной
+                            почты, ваше сообщение или любую другую информацию, которой вы хотели бы поделиться с
+                            нами.
+                        </p>
+                        <p>
+                            Если вы хотите получать новости о последних поступлениях, скидках и специальных
+                            предложениях, вам нужно подписаться на рассылку, оставив адрес своей электронной почты в
+                            соответствующем разделе.
+                        </p>
+                        <p>
+                            Пожалуйста, обратите внимание, что при оформлении заказа
+                            товаров или услуг, для вас будет автоматически создан аккаунт на нашем сайте на
+                            основании данных, которые вы нам предоставите.
+                        </p>
+                        <p>
+                            Мы запросим ваш номер телефона, чтобы
+                            продолжить обработку вашего заказа и чтобы сообщить о его статусе. Также мы запрашиваем
+                            день и месяц вашего рождения для предоставления специальных предложений в ваш день
+                            рождения.
+                        </p>
+                        <p class="h5">ПЕРЕДАЧА ПЕРСОНАЛЬНЫХ ДАННЫХ ТРЕТЬИМ ЛИЦАМ</p>
+                        <p>
+                            Каждый раз, когда мы запрашиваем ваши персональные данные, мы требуем подтверждения, что
+                            вы согласны предоставить их для дальнейшей обработки и использования.
+                        </p>
+                        <p>
+                            Мы будем
+                            передавать ваши имя, фамилию, электронную
+                            почту, адрес доставки и номер телефона курьерским службам для организации доставки ваших
+                            заказов.
+                        </p>
+                        <p>
+                            Кроме этого, мы будем передавать ваши имя, фамилию и адрес электронной почты
+                            компаниям, предоставляющим услуги в сети Интернет, для оповещения вас о последних
+                            поступлениях, действующих скидках и специальных предложениях, для оптимизации работы
+                            сайта, ведения статистики и таргетирования рекламы.
+                        </p>
+                        <p>
+                            Обратите внимание, что мы не
+                            обрабатываем и не храним данные о платежных картах. Мы сотрудничаем с третьими лицами
+                            для обработки оплаты, и только эти лица будут иметь доступ к данным ваших платежных
+                            карт.
+                        </p>
+                        <p>
+                            Мы также ведём запись товаров, приобретённых вами у нас и партнерских бутиков.
+                            Таким образом, мы можем быстрее разобраться с любыми возникшими проблемами или
+                            запросами, а также удостовериться, что вся отсылаемая вам информация относится к
+                            проблемам с вашим заказом или к вашим запросам.
+                        </p>
+                        <p>
+                            Собранная информация позволяет нам:
+                        </p>
+                        <ul class="clear-list">
+                            <li>
+                                Предоставить товары и услуги, которые вы заказали;
+                            </li>
+                            <li>
+                                Подтвердить вашу личность и детали
+                                вашего способа оплаты или счёта кредитной картой;
+                            </li>
+                            <li>
+                                Управлять нашим Сайтом и оказывать
+                                услуги обслуживания клиентов;
+                            </li>
+                            <li>
+                                Общаться с вами (через электронную почту и телефон в
+                                случае, если вы предоставили такие данные);
+                            </li>
+                            <li>
+                                Сообщать вам о наших предложениях, услугах
+                                или товарах;
+                            </li>
+                            <li>
+                                Предоставлять ваши данные третьим лицам, занимающимся доставкой заказов,
+                                подтверждением заказов, подтверждением оплаты, исключением случаев мошенничества (в том
+                                числе правоохранительным органам).
+                            </li>
+                            <li>
+                                Мы также можем раскрыть ваш аккаунт и другие
+                                персональные данные, если это будет необходимо в соответствии с законом, чтобы защищать
+                                права, имущество, безопасность наших пользователей или других третьих лиц.
+                        </ul>
+                        <p>
+                            Раскрытие
+                            вашего аккаунта и других персональных данных включает в себя обмен информацией с другими
+                            компаниями и организациями для проверки личности в целях защиты от мошенничества.
+                            Указанные действия выполняются в мере, допустимой применимыми законами. Мы можем
+                            опубликовывать совокупную, анонимную статистику о количестве посетителей нашего Сайта
+                            или о числе покупок третьим лицам, включающим наших инвесторов.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-page__text">
+                        <p class="h5">ДОСТУП К ВАШИМ ПЕРСОНАЛЬНЫМ ДАННЫМ</p>
+                        <p>
+                            Мы бережем конфиденциальность наших клиентов, поэтому принимаем
+                            разумные меры по защите от неавторизованного доступа к нашим базам данных.
+                        </p>
+                        <p>
+                            Только
+                            авторизованные
+                            сотрудники компании имеют доступ к вашим персональным данным. Мы используем защищённый от
+                            неавторизованного физического доступа сервер и последние версии антивирусного программного
+                            обеспечения.
+                        </p>
+                        <p>
+                            Чтобы увидеть ваши персональные данные, которые у нас имеются, пожалуйста,
+                            свяжитесь с
+                            нами через контактную форму. Согласно законодательству, мы можем запросить небольшую плату
+                            за
+                            предоставление копии ваших персональных данных.
+                        </p>
+                        <p class="h5">КОММУНИКАЦИЯ И МАРКЕТИНГ</p>
+                        <p>
+                            Чтобы подписаться на нашу
+                            рассылку с информацией о новых товарах, услугах, интересном материале и событиях, чтобы
+                            получать
+                            специальные предложения по электронной почте или телефону, пожалуйста, заполните форму
+                            подписки.
+                            Если вы осуществляете покупки на нашем Сайте, мы можем иногда использовать адрес вашей
+                            электронной
+                            почты, чтобы выслать нашу рассылку и сообщить о специальных предложениях.
+                        </p>
+                        <p>
+                            Пожалуйста, обратите внимание, что любой способ связи через электронную почту или телефон
+                            будет осуществлён исключительно нами. Мы не продаём и не передаём любым другим способом ваши
+                            контактные данные третьим лицам в целях маркетинга. Вы можете отказаться от таких
+                            коммуникаций в любое время.
+                        </p>
+                        <p class="h5">ПОЛИТИКА COOKIES</p>
+                        <p>
+                            Когда вы
+                            пользуетесь Сайтом, мы собираем cookies — маленькие объемы информации, которые передает ваш
+                            интернет-браузер нашему Сайту. Мы используем их для:
+                        </p>
+                        <ul class="clear-list">
+                            <li>
+                                Идентификации вашего браузера на каждой
+                                конкретной странице (без этого мы не смогли бы обеспечить запоминание вашего пароля,
+                                содержимого
+                                корзины и предыдущих заказов).
+                            </li>
+                            <li>
+                                Сбора информации о поведении пользователей на нашем сайте. Эти данные передаются
+                                анонимно, так что по ним мы не можем идентифицировать покупателя.
+                            </li>
+                            <li>
+                                Сбора информации о стране, откуда пользователь заходит на Сайт, используемом языке,
+                                устройстве и операционной системе. Эта информация также обезличена и не может быть
+                                использована для идентификации пользователя и отслеживания его истории посещений на
+                                других сайтах.
+                            </li>
+                            <li>
+                                Сбора информации о том, с какого ресурса
+                                пользователь перешел на Сайт. Она позволяет нам настраивать рекламные кампании на
+                                сторонних ресурсах
+                                и персонифицировать рекламу согласно предпочтениям каждого конкретного покупателя.
+                            </li>
+                        </ul>
+                        <p class="h5">БЕЗОПАСНОСТЬ</p>
+                        <p>
+                            Мы проявляем разумные меры, чтобы поддерживать подходящий уровень безопасности,
+                            обеспечивая необходимую защиту, неприкосновенность и конфиденциальность информации, которую
+                            вы нам предоставили. Пожалуйста, учитывайте, что если вы добровольно размещаете ваши
+                            персональные данные онлайн в незащищённой среде эта информация может быть собрана и
+                            использована другими вне нашего контроля.
+                        </p>
+                        <p class="h5">ОБНОВЛЕНИЯ К ЭТОЙ ПОЛИТИКИ</p>
+                        <p>
+                            Эта Политика Конфиденциальности последний раз была обновлена в октябре 2017. Мы будем
+                            опубликовывать любые обновления к нашей Политике Конфиденциальности на этой странице.
+                            Пожалуйста, обращайтесь к файлу регулярно, чтобы оставаться в курсе всех обновлений Политики
+                            Конфиденциальности.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-col">
+                <div class="icon-list">
+                    <div class="icon-list__item">
+                        <div class="icon-list__item___icon">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="5.5" width="16" height="12" stroke="black"/>
+                                <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                      stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="icon-list__item___header">
+                            Free Shipping in Russia
+                        </div>
+                        <div class="icon-list__item___desc">
+                            Free shipping on all orders over 500 €
+                        </div>
+                    </div>
+                    <div class="icon-list__item">
+                        <div class="icon-list__item___icon">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="5.5" width="16" height="12" stroke="black"/>
+                                <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                      stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="icon-list__item___header">
+                            Free Shipping in Russia
+                        </div>
+                        <div class="icon-list__item___desc">
+                            Free shipping on all orders over 500 €
+                        </div>
+                    </div>
+                    <div class="icon-list__item">
+                        <div class="icon-list__item___icon">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="5.5" width="16" height="12" stroke="black"/>
+                                <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                      stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="icon-list__item___header">
+                            Free Shipping in Russia
+                        </div>
+                        <div class="icon-list__item___desc">
+                            Free shipping on all orders over 500 €
+                        </div>
+                    </div>
+                    <div class="icon-list__item">
+                        <div class="icon-list__item___icon">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="5.5" width="16" height="12" stroke="black"/>
+                                <path d="M13 9V5.5C13 3.01472 10.9853 1 8.5 1C6.01472 1 4 3.01472 4 5.5V9"
+                                      stroke="black"/>
+                            </svg>
+                        </div>
+                        <div class="icon-list__item___header">
+                            Free Shipping in Russia
+                        </div>
+                        <div class="icon-list__item___desc">
+                            Free shipping on all orders over 500 €
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-col">
+                <span class="footer__col-header">Company</span>
+                <nav class="nav flex-column">
+                    <a class="nav-link active" href="/about.html">About us</a>
+                    <a class="nav-link" href="javascript:void(0);">Vacancy</a>
+                    <a class="nav-link" href="/lookbook.html">Lookbook</a>
+                    <a class="nav-link" href="javascript:void(0);">Delivery And Payment</a>
+                    <a class="nav-link" href="javascript:void(0);">Return</a>
+                    <a class="nav-link" href="javascript:void(0);">Conditions</a>
+                    <a class="nav-link" href="javascript:void(0);">Privacy Policy</a>
+                    <a class="nav-link" href="/contacts.html">Contacts</a>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-col">
+                <span class="footer__col-header">Subscription</span>
+                <p class="footer__col-desc">To receive latest offers and discounts from the shop.</p>
+                <div class="subscription">
+                    <form action="" id="subsForm">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" name="subs_email" placeholder="Email"
+                                   aria-label="Email"
+                                   required
+                                   aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">
+                                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 5L0.5 9.33013L0.5 0.669872L8 5Z" fill="#333333"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <p class="footer__col-desc">
+                    Leaving my email I agree to the processing of personal data and accept the conditions
+                    <a href="javascript:void(0);">privacy policy</a>
+                </p>
+                <span class="footer__col-header mt-5">Social</span>
+                <div class="social mt-3">
+                    <a href="javascript:void(0);" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="javascript:void(0);" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0);" target="_blank" class="social-icon">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-col">
+                <span class="footer__col-header">PAYMENT METHODS</span>
+                <p class="footer__col-desc">We support one of the following payment methods.</p>
+                <div class="payments">
+                    <a href="javascript:void(0);" class="payments-item">
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="payments-item">
+                        <i class="fab fa-cc-paypal"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="payments-item">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                </div>
+                <span class="footer__col-header mt-5 mb-3">Need support?</span>
+                <p>Call +7 (925) 337-37-37</p>
+
+                <p>WHO I AM Gallery Stolyarniy pereulok, 3/13</p>
+
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/1.a773b946.chunk.js"></script><script src="js/app.d8394c5e.js"></script></body>
+
+</html>
