@@ -32,30 +32,34 @@ function detectMob() {
     return navigator.userAgent.match(toMatchItem);
   });
 }
-let cw = document.body.clientWidth;
+var cw = document.body.clientWidth;
 
-const search_input = $('#searchForm');
-const mob_search_btn = $('#mobSearchBtn');
-const def_search_wrap = $('.header__search');
-const sh_search_wrap = $('.subheader__search');
-const mob_search_wrap = $('.mobile__search');
-const search_close = $('.btn-search-close');
+var search_input = $('#searchForm');
+var mob_search_btn = $('#mobSearchBtn');
+var def_search_wrap = $('.header__search');
+var sh_search_wrap = $('.subheader__search');
+var mob_search_wrap = $('.mobile__search');
+var search_close = $('.btn-search-close');
 
 function place_serach_wrap(search_wrap) {
   search_wrap.append(search_input);
 }
 
 mob_search_btn.click(function () {
-  sh_search_wrap.toggleClass('active');
-  $(this).toggle();
+  if (cw < 1150) {
+    sh_search_wrap.toggleClass('active');
+    $(this).toggle();
+  }
 });
 
 search_close.click(function () {
-  if ($('body').hasClass('search_page')) {
-    $(this).siblings('input').val('');
-  } else {
-    sh_search_wrap.toggleClass('active');
-    mob_search_btn.toggle();
+  if (cw < 1150) {
+    if ($('body').hasClass('search_page')) {
+      $(this).siblings('input').val('');
+    } else {
+      sh_search_wrap.toggleClass('active');
+      mob_search_btn.toggle();
+    }
   }
 });
 
@@ -77,10 +81,16 @@ function detect_search_replacement(cw) {
   }
 }
 
-$(window).resize(function () {
-  cw = document.body.clientWidth;
-  detect_search_replacement(cw);
-});
+setTimeout(function () {
+  var timerResize = 'first';
+  window.onorientationchange = function () {
+    if (timerResize !== 'first') clearTimeout(timerResize);
+    timerResize = setTimeout(function () {
+      cw = document.body.clientWidth;
+      detect_search_replacement(cw);
+    }, 200);
+  };
+}, 200);
 
 $(function () {
   detect_search_replacement(cw);
