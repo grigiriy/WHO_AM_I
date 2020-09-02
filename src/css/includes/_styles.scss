@@ -1,9 +1,14 @@
+body,
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  max-width: 100vw;
+}
 body {
   background-color: $primaryBgColor;
   color: $primaryColor;
   font: $primaryFont;
   font-weight: $primaryFontWeight;
-  overflow-x: hidden;
 
   &.menu-fixed {
     padding-top: 50px;
