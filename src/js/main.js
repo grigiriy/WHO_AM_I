@@ -253,3 +253,21 @@ function selectGender(e) {
 function toggle_sizeGuid() {
   $('#sizeGuid').toggleClass('active');
 }
+
+$('#store_locations').click(function (e) {
+  var city_wrap = $(e.target).hasClass('contacts__info')
+    ? $(e.target)
+    : $(e.target).parents('.contacts__info');
+
+  var city = city_wrap.data('city');
+
+  $('#city_' + city).toggle();
+  $('#city_' + city)
+    .siblings('iframe')
+    .toggle();
+
+  city_wrap
+    .toggleClass('active')
+    .siblings('.contacts__info')
+    .toggleClass('active');
+});
