@@ -207,6 +207,11 @@ h1,
     text-transform: uppercase;
     padding: $defaultPadding;
     border-bottom: 1px solid $borderGreyColor;
+    transition: all 0.1s;
+    cursor: pointer;
+    &.active {
+      background: rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__form {
